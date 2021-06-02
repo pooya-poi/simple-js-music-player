@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./topfont.css" /> -->
+    <link rel="stylesheet" href="./styles/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Limelight&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- <div class="blob">
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#9EF0F01c"
+        d="M54.9,-50C70.5,-39.4,82,-19.7,83.6,1.5C85.1,22.8,76.7,45.6,61.1,61.1C45.6,76.6,22.8,84.9,3.7,81.1C-15.3,77.4,-30.6,61.6,-44.3,46.1C-57.9,30.6,-70,15.3,-72.7,-2.7C-75.5,-20.7,-68.8,-41.5,-55.1,-52.1C-41.5,-62.7,-20.7,-63.3,-0.5,-62.8C19.7,-62.3,39.4,-60.7,54.9,-50Z"
+        transform="translate(100 100)" />
+    </svg>
+  </div> -->
+
+    <div class="music-container">
+      <div class="container-background">
+        <img src="" alt="" id="container-background" />
+      </div>
+
+      <div class="info-container">
+        <div class="img-container">
+          <img src="" alt="" id="cover" />
+        </div>
+        <div class="wrapper">
+          <!-- <div class="bg-blur"></div> -->
+          <div class="music-info">
+            <div class="music-details">
+              <h4 id="title"></h4>
+              <h5 id="artist">this is artist</h5>
+            </div>
+            <div class="progress-container">
+              <div class="progress-container-dim"></div>
+              <div class="progress"></div>
+            </div>
+            <div class="time-container">
+              <div class="total-time">0:0</div>
+              <div class="timer">0:0</div>
+            </div>
+
+            <div class="other-controler">
+              <button id="mute">
+                <i class="fas fa-volume-up"></i>
+              </button>
+              <button id="like">
+                <i class="fas fa-heart"></i>
+              </button>
+            </div>
+
+            <div class="navigation">
+             
+              <button id="prev" class="control-btn">
+                <i class="fas fa-step-backward"></i>
+              </button>
+              <button id="backward" class="control-btn">
+                <i class="fas fa-backward"></i>
+              </button>
+              <button id="play" class="control-btn">
+                <i class="fas fa-play"></i>
+              </button>
+              <button id="forward" class="control-btn">
+                <i class="fas fa-forward"></i>
+              </button>
+              <button id="next" class="control-btn">
+                <i class="fas fa-step-forward"></i>
+              </button>
+            </div>
+            <!-- <div class="bg-blur"></div> -->
+          </div>
+
+        </div>
+
+        <audio src="/files/songOne.mp3" id="audio"></audio>
+      </div>
+    </div>
+    <!-- <div class="footer">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#0099ff" fill-opacity="1"
+        d="M0,192L0,192L36.9,192L36.9,288L73.8,288L73.8,192L110.8,192L110.8,192L147.7,192L147.7,96L184.6,96L184.6,224L221.5,224L221.5,288L258.5,288L258.5,0L295.4,0L295.4,64L332.3,64L332.3,160L369.2,160L369.2,32L406.2,32L406.2,32L443.1,32L443.1,256L480,256L480,192L516.9,192L516.9,96L553.8,96L553.8,320L590.8,320L590.8,320L627.7,320L627.7,32L664.6,32L664.6,64L701.5,64L701.5,256L738.5,256L738.5,256L775.4,256L775.4,288L812.3,288L812.3,128L849.2,128L849.2,160L886.2,160L886.2,256L923.1,256L923.1,96L960,96L960,64L996.9,64L996.9,224L1033.8,224L1033.8,256L1070.8,256L1070.8,256L1107.7,256L1107.7,288L1144.6,288L1144.6,0L1181.5,0L1181.5,192L1218.5,192L1218.5,288L1255.4,288L1255.4,64L1292.3,64L1292.3,288L1329.2,288L1329.2,32L1366.2,32L1366.2,224L1403.1,224L1403.1,192L1440,192L1440,320L1403.1,320L1403.1,320L1366.2,320L1366.2,320L1329.2,320L1329.2,320L1292.3,320L1292.3,320L1255.4,320L1255.4,320L1218.5,320L1218.5,320L1181.5,320L1181.5,320L1144.6,320L1144.6,320L1107.7,320L1107.7,320L1070.8,320L1070.8,320L1033.8,320L1033.8,320L996.9,320L996.9,320L960,320L960,320L923.1,320L923.1,320L886.2,320L886.2,320L849.2,320L849.2,320L812.3,320L812.3,320L775.4,320L775.4,320L738.5,320L738.5,320L701.5,320L701.5,320L664.6,320L664.6,320L627.7,320L627.7,320L590.8,320L590.8,320L553.8,320L553.8,320L516.9,320L516.9,320L480,320L480,320L443.1,320L443.1,320L406.2,320L406.2,320L369.2,320L369.2,320L332.3,320L332.3,320L295.4,320L295.4,320L258.5,320L258.5,320L221.5,320L221.5,320L184.6,320L184.6,320L147.7,320L147.7,320L110.8,320L110.8,320L73.8,320L73.8,320L36.9,320L36.9,320L0,320L0,320Z">
+      </path>
+    </svg>
+  </div> -->
+    <script src="./script.js"></script>
+  </body>
+</html>
